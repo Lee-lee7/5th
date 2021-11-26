@@ -1,0 +1,422 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/tables";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/button-group";
+@import "node_modules/bootstrap/scss/input-group";
+@import "node_modules/bootstrap/scss/custom-forms";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/breadcrumb";
+@import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/jumbotron";
+@import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/media";
+@import "node_modules/bootstrap/scss/list-group";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/toasts";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/tooltip";
+@import "node_modules/bootstrap/scss/popover";
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/spinners";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/print";
+
+
+
+@import "scss/fonts";
+@import "scss/header";
+@import "section-two";
+
+/* Обнулення */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body{
+    height: 100%;
+    font-size: 18px;
+    color: #666666;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: 'Varela Round';
+    margin-top: 5px;
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+._container {
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 0px 15px; 
+    box-sizing: content-box;
+}
+
+
+
+
+
+
+
+
+main{
+     
+     .section-three{
+         background-image: url(../img/background.png);
+         background-color: #262626;
+         height: 734px;
+         background-size: auto auto;
+         background-repeat: no-repeat;
+         margin-top: 80px;
+       
+         
+
+         .section-three-right{
+             margin-top: 185px;
+             display: block;
+         }
+         .col-title{
+            font-family: 'Montserrat';
+            font-size: 2.30vw;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #ffffff;
+         }
+         .text-slider{
+            font-family: 'Varela Round';
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 400;
+            color: #aeaeae;
+            padding-right: 90px;
+            margin-top: 68px;
+            padding-bottom: 47px;
+         }
+         .text-slider-second{
+            font-family: 'Varela Round';
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #aeaeae;
+            margin-left: -74px;
+            padding-right: 70px;
+            margin-top: -6px;
+         }
+         
+
+
+         
+
+        .slick-slider{
+            min-width: 0;
+        }
+        .slick-track{
+            display: flex;
+            align-items: center;
+            margin-top: -78px;
+        }
+        .slider{
+            min-width: 0;
+        }
+        .slick-list{
+            overflow: hidden;
+        }
+        .slider .slick-dots{
+            display: flex;
+            align-items: flex-start;
+            margin-top: 3px;
+            margin-left: -7px;
+        }
+        .slider .slick-dots li{
+            list-style: none;
+            margin: 5px;
+            
+        }
+        .slider .slick-dots button{
+            font-size: 0;
+            width: 11px;
+            height: 11px;
+            border-radius: 100%;
+            background-color: rgba(255,255,255,0.0);
+            border: 1px solid #ffffff;
+        }
+        .slider .slick-dots li.slick-active button{
+           background-color: white;
+        }
+        .slider_item{
+            padding-right: 20px;
+            
+        }
+
+        @media screen and (max-width:1815px)
+        {
+           
+        }
+        @media screen and (max-width:1715px)
+        {
+            background-size: contain;
+            height: 95%;  
+        }
+
+
+        @media screen and (max-width:1625px)
+        {
+            background-size: 80%;
+            height: 80%;  
+         .section-three-right{
+            margin-top: 50px;
+           
+        }
+        }
+        @media screen and (max-width:1448px)
+        {
+            background-size: 95%;
+            height: 95%;  
+        }
+        @media screen and (max-width:1270px)
+        {
+            background-size: 130%;
+            height: 130%; 
+       
+            .section-three-right{
+                margin-top: 600px;
+                align-items: center;
+                margin-right: 268px;
+            }
+        }
+        @media screen and (max-width:991px)
+        {
+            .section-three-right{
+                margin-top: 600px;
+                align-items: center;
+                margin-right: 238px;
+                .text-slider{
+                    padding-right: 0px;
+                }
+                .text-slider-second{
+                    padding-right: 0px;
+                }
+            }
+        }
+
+        button{
+            width: 70%;
+            height: 100%;
+            background: none;
+        }
+        .video-button{
+            width: 70%;
+            background-color: none;
+           
+        }
+
+
+
+
+        }
+
+        
+
+
+     
+
+
+     .section-four{
+        background-image: url(../img/background_2.png);
+        background-color: #313131;
+        max-height: 803px;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        &-left{
+            margin-left: 71px;
+            margin-top: 229px;
+        }
+        .col-title-two{
+            font-family: 'Montserrat';
+            font-size: 49px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #ffffff;
+            margin-top: -65px;
+            margin-left: -4px;
+            padding-bottom: 25px;
+         }
+         .text-section-four{
+            font-family: 'Varela Round';
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 400;
+            color: #777777;
+            padding-right: 101px;
+         }
+         .block{
+            height: 232px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            .title-block{
+                font-family: 'Montserrat';
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #cc5858;
+                margin-top: 34px;
+                margin-left: -100px;
+                &-1{
+                    color: #FFC316;
+                }
+                &-2{
+                    color: #78F064;
+                }
+                &-3{
+                    color: #2971F0;
+                }
+                &-4{
+                    color: #C464F0;
+                }
+                
+                &-5{
+                    color: #37A4FF;
+                }
+                &-6{
+                    color: #F06473;
+                }
+            }
+            .text-block{
+                font-family: 'Varela Round';
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #666666;
+                padding-right: 40px;
+                margin-left: -98px;
+                margin-top: 9px;
+            }
+            .brush{
+                margin-top: 44px;
+                margin-left: 31px;
+            }
+            .line{
+                width: 470px;
+                height: 43px;
+                background-color: #f06464;
+                margin-top: 27px;
+                &-1{
+                    background-color: #FFC316;
+                }
+                &-2{
+                    background-color: #78F064;
+                }
+                &-3{
+                    background-color: #2971F0;
+                }
+                &-4{
+                    background-color: #C464F0;
+                }
+                
+                &-5{
+                    background-color: #37A4FF;
+                }
+                &-6{
+                    background-color: #F06473;
+                } 
+            }
+         }
+       .slick-slider{
+            min-width: 0;
+            width: 470px;
+            margin-top: 37px;
+        }
+        .slick-track{
+            display: flex;
+            align-items: center;
+            
+
+        }
+        .slider{
+            min-width: 0;
+        }
+        .slider_second .slick-dots{
+            display: flex;
+            margin-top: -37px;
+            margin-left: 32px;
+            z-index: 1000;
+            position: relative;
+        }
+        .slider_second .slick-dots li{
+            list-style: none;
+           margin: 4px;
+        }
+        .slider_second .slick-dots button{
+            font-size: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: rgba(255,255,255,0.0);
+            border: 1px solid #ffffff;
+        }
+        .slider_second .slick-dots li.slick-active button{
+            background-color: white;
+            border: 1px solid white;
+        }
+    
+        @media screen and (max-width:1625px)
+        {
+            .section-four{
+                background-size: contain;
+                max-height: 90%;  
+            }
+           
+           
+        }
+
+        @media screen and (max-width:1270px)
+        {
+            .section-four-left{
+                margin-top: 129px;
+                
+            }
+        }
+     }
+     
+}

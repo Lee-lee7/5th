@@ -1,0 +1,169 @@
+.header{
+
+    &-wrapper{
+        background-color: #de5d5d;
+        align-items: center;
+      .navbar{
+          padding: 0px;
+          .navbar-brand{
+            img{
+              margin-top: 25px;
+            }
+        }
+        
+        &-nav{
+          margin-top: 32px;
+          margin-left: 268px;
+          padding-left: 0px;
+          padding-right: 4px;
+          
+          .nav-item{
+              padding-right: 22px;
+// top bar
+              &.active{
+                a::after{
+                    content: '';
+                    width: 82px;
+                    height: 5px;
+                    background-color: #ffffff;
+                    position: absolute;
+                    top:0;
+                }
+               }
+          }
+           li a {
+             font-family: 'Varela Round', sans-serif;
+             font-size: 18px;
+             line-height: 1.2;
+             font-weight: 400;
+             color: #ffffff;
+
+             
+           }
+
+           
+        }
+      }
+    }
+    #navbarMenu{
+        margin-right: 1px;
+    }
+    .fa-bars{
+        font-size: 35px;
+        color: white;
+    }
+
+    .baner-wrapper{
+        background-color: #de5d5d; 
+        padding-top: 30px;
+    }
+    .baner{
+        background-color: #de5d5d; 
+        max-width: 1550px;
+        max-height: 950px;
+        margin: 0px auto;
+        z-index: -100;
+        .carousel-inner{
+            margin-top: -4px;
+            margin-left: 9px;
+            background-image: url(../img/iphone.png) ;
+            background-size: 100% auto; 
+            background-repeat: no-repeat;
+            min-height: 690px;
+            
+        }
+        .carousel-item{
+            width: 100%;
+            
+            .text-baner{
+                font-family: 'Montserrat';
+                font-size: 88px;
+                line-height: 1.2;
+                font-weight: 600;
+                color: #ffffff;
+                position: relative;
+                text-align: center;
+                margin-top: 196px;
+                margin-right: 18px;
+                @include media-breakpoint-down(md) { 
+                    font-size: 70px;
+                }
+                @include media-breakpoint-down(sm) { 
+                    font-size: 60px;
+                }
+                @include media-breakpoint-down(xs) { 
+                    font-size: 40px;
+                }
+            
+     
+            }
+            .btn-theme {
+                color: #fff;
+                background-color: transparent;
+                border: 2px solid #fff;
+                margin-right: 15px;
+            }
+            
+            .btn-theme:hover {
+                color: #000;
+                background-color: rgba(177, 177, 177, 0.514);
+                border-color: #fff;
+            }
+          
+            .appstore{
+                min-width: 257px;
+                height: 77px;
+                background-color: rgba(6,53,80,0.0);
+                border: 3px solid #ffffff;
+                border-radius: 5px;
+                margin-top: 46px;
+              
+                
+               
+                
+                .text-store{
+                    font-family: 'Varela Round';
+                    font-size: 30px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #ffffff;
+                    display: flex;
+                    justify-content: center ;
+                    max-width: 257px;
+                    margin-top: -45px;
+                    margin-left: 68px;
+                }
+               
+                .icon-store{
+                    max-width: 52px;
+                    height: 52px;
+                    margin-top: 5px;
+                    margin-left: 10px;
+                }
+            }
+       
+        }
+        .carousel-indicators{
+            margin-bottom: 55px;
+            @include media-breakpoint-down(sm) { 
+                margin-bottom:  10px;
+        
+            }
+            
+        }
+        
+        .carousel-indicators li {
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background-color: rgba(255,255,255,0.0);
+            border: 2px solid #ffffff;
+         
+        }
+        .carousel-indicators .active{
+            background-color: white;
+        }
+         
+    }
+    
+}
