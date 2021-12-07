@@ -1,7 +1,10 @@
+$primary:#de5d5d;
+$white: #ffffff;
+$font_first: 'Varela Round';
+$font_second: 'Montserrat';
 .section-two{
         padding-top: 109px;
-       /* margin-top: -200px;*/
-        background-color: white;
+        background-color: $white;
         z-index: 1000;
         position: relative;
         .row{
@@ -10,7 +13,7 @@
             margin-right: -40px;
         }
         .caption_why{
-            font-family: 'Montserrat';
+            font-family: $font-second;
             font-size: 48px;
             line-height: 1.2;
             font-weight: 600;
@@ -21,7 +24,7 @@
         .overview-item{
             text-align: center;
             &_title{
-                font-family: 'Montserrat';
+                font-family: $font_second;
                 font-size: 18px;
                 line-height: 26px;
                 font-weight: 600;
@@ -30,7 +33,7 @@
                 margin-right: 16px;
             }
             &_text{
-                font-family: 'Varela Round';
+                font-family: $font_first;
                 font-size: 16px;
                 padding-left: 40px;
                 padding-right: 40px;

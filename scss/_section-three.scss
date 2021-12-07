@@ -1,0 +1,134 @@
+.section-three{
+         
+    background-color: #262626;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    margin-top: 101px;
+    .iphone_one{
+        margin-top: 72px;
+        margin-left: -22px;
+    }
+    .row{
+        margin-top: -21px;
+    }
+  
+    .section-three-right{
+        margin-top: 185px;
+        display: block;
+    }
+    .col-title{
+       font-family: $font_second;
+       font-size: 46px;
+       line-height: 1.2;
+       font-weight: 600;
+       color: #ffffff;
+    }
+    .text-slider{
+       font-family: $font_first  ;
+       font-size: 18px;
+       line-height: 27px;
+       font-weight: 400;
+       color: #aeaeae;
+       padding-right: 90px;
+       margin-top: 73px;
+       padding-bottom: 47px;
+    }
+    .text-slider-second{
+       font-family: 'Varela Round';
+       font-size: 16px;
+       line-height: 24px;
+       font-weight: 400;
+       color: #aeaeae;
+       margin-left: -74px;
+       padding-right: 70px;
+       margin-top: -6px;
+    }
+    button{
+        background: none;
+    }
+
+
+    
+
+   .slick-slider{
+       min-width: 0;
+   }
+   .slick-track{
+       display: flex;
+       align-items: center;
+       margin-top: -66px;
+   }
+   .slider{
+       min-width: 0;
+   }
+   .slick-list{
+       overflow: hidden;
+   }
+   .slider .slick-dots{
+       display: flex;
+       align-items: flex-start;
+       margin-top: 23px;
+       margin-left: -7px;
+   }
+   .slider .slick-dots li{
+       list-style: none;
+       margin: 5px;
+       
+   }
+   .slider .slick-dots button{
+       font-size: 0;
+       width: 11px;
+       height: 11px;
+       border-radius: 100%;
+       background-color: rgba(255,255,255,0.0);
+       border: 1px solid #ffffff;
+   }
+   .slider .slick-dots li.slick-active button{
+      background-color: white;
+   }
+   .slider_item{
+       padding-right: 20px;
+       
+   }
+   @media(max-width: 1200px){
+       .iphone_one{
+           width: 90%;
+           height: 90%;
+           margin-top: 61px;
+       }
+       .text-slider-second{
+           padding-right: 14px;
+           margin-left: -45px;
+       }
+       
+   }
+   @media(max-width: 991px){
+       .iphone_one{
+           width: 83%;
+           height: 68%;
+           margin-top: 76px;
+       }
+       .section-three-right{
+           margin-top: 88px;
+       }
+       .text-slider-second{
+           padding-right: 0px;
+           margin-left: 17px;
+       }
+
+   }
+   @media(max-width: 767px){
+       .iphone_one{
+           height: 100%;
+           margin-top: 0px;
+           margin-left: 25px;
+       }
+   }
+   @media(max-width: 576px){
+       .text-slider-second{
+           margin-left: 2px;
+           margin-top: -2px;
+           font-size: 14px;
+       }
+   }
+}
