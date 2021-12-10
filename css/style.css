@@ -7311,6 +7311,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header .fa-bars {
   font-size: 35px;
+  margin-top: 30px;
   color: #ffffff; }
 
 .header .baner-wrapper {
@@ -7350,11 +7351,21 @@ a.text-dark:hover, a.text-dark:focus {
       @media (max-width: 575.98px) {
         .header .baner .carousel-item .text-baner {
           font-size: 40px; } }
+    .header .baner .carousel-item .button_baner {
+      display: flex;
+      justify-content: center;
+      margin-right: 115px;
+      flex-wrap: wrap; }
+    .header .baner .carousel-item .button-one {
+      margin-left: 99px;
+      margin-right: 32px; }
     .header .baner .carousel-item .btn-theme {
       color: #ffffff;
       background-color: transparent;
-      border: 2px solid #ffffff;
-      margin-right: 15px; }
+      border: 2px solid #ffffff; }
+    .header .baner .carousel-item .btn:focus {
+      outline: none;
+      box-shadow: none; }
     .header .baner .carousel-item .btn-theme:hover {
       color: #000;
       background-color: rgba(177, 177, 177, 0.514); }
@@ -7395,16 +7406,16 @@ a.text-dark:hover, a.text-dark:focus {
   .header .baner .carousel-indicators .active {
     background-color: #ffffff; }
 
-.section-two {
+@media (max-width: 789px) {
+  .header .button-two {
+    margin-left: 67px; } }
+
+.overview {
   padding-top: 109px;
   background-color: #ffffff;
   z-index: 1000;
   position: relative; }
-  .section-two .row {
-    margin-top: 62px;
-    margin-left: -40px;
-    margin-right: -40px; }
-  .section-two .caption_why {
+  .overview__caption {
     font-family: "Montserrat";
     font-size: 48px;
     line-height: 1.2;
@@ -7412,135 +7423,162 @@ a.text-dark:hover, a.text-dark:focus {
     color: #3a3a3a;
     text-align: center;
     margin-top: -10px; }
-  .section-two .overview-item {
+  .overview__row {
+    margin-top: 62px;
+    margin-left: -40px;
+    margin-right: -40px; }
+  .overview__item {
     text-align: center; }
-    .section-two .overview-item_title {
+    .overview__item-title {
       font-family: "Montserrat";
-      font-size: 18px;
       line-height: 26px;
       font-weight: 600;
-      color: #666666;
-      margin-top: 36px;
-      margin-right: 16px; }
-    .section-two .overview-item_text {
-      font-family: "Varela Round";
+      margin-top: 36px; }
+    .overview__item-text {
       font-size: 16px;
       padding-left: 40px;
       padding-right: 40px;
       line-height: 26px;
-      color: #666666;
-      margin-right: 18px;
       margin-top: -4px;
       padding-bottom: 30px; }
 
-.section-three {
+.item__title-focus {
+  margin-right: 18px; }
+
+.item__text-focus {
+  margin-right: 18px; }
+
+.share {
   background-color: #262626;
   background-size: auto auto;
   background-repeat: no-repeat;
   margin-top: 101px; }
-  .section-three .iphone_one {
-    margin-top: 72px;
-    margin-left: -22px; }
-  .section-three .row {
+  .share__row {
     margin-top: -21px; }
-  .section-three .section-three-right {
+  .share__photo {
     margin-top: 185px;
     display: block; }
-  .section-three .col-title {
-    font-family: "Montserrat";
-    font-size: 46px;
-    line-height: 1.2;
-    font-weight: 600;
-    color: #ffffff; }
-  .section-three .text-slider {
-    font-family: "Varela Round";
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
-    color: #aeaeae;
-    padding-right: 90px;
-    margin-top: 73px;
-    padding-bottom: 47px; }
-  .section-three .text-slider-second {
-    font-family: 'Varela Round';
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #aeaeae;
-    margin-left: -74px;
-    padding-right: 70px;
-    margin-top: -6px; }
-  .section-three button {
-    background: none; }
-  .section-three .slick-slider {
-    min-width: 0; }
-  .section-three .slick-track {
-    display: flex;
-    align-items: center;
-    margin-top: -66px; }
-  .section-three .slider {
-    min-width: 0; }
-  .section-three .slick-list {
-    overflow: hidden; }
-  .section-three .slider .slick-dots {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 23px;
-    margin-left: -7px; }
-  .section-three .slider .slick-dots li {
-    list-style: none;
-    margin: 5px; }
-  .section-three .slider .slick-dots button {
-    font-size: 0;
-    width: 11px;
-    height: 11px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid #ffffff; }
-  .section-three .slider .slick-dots li.slick-active button {
-    background-color: white; }
-  .section-three .slider_item {
-    padding-right: 20px; }
-  @media (max-width: 1200px) {
-    .section-three .iphone_one {
-      width: 90%;
-      height: 90%;
-      margin-top: 61px; }
-    .section-three .text-slider-second {
-      padding-right: 14px;
-      margin-left: -45px; } }
-  @media (max-width: 991px) {
-    .section-three .iphone_one {
-      width: 83%;
-      height: 68%;
-      margin-top: 76px; }
-    .section-three .section-three-right {
-      margin-top: 88px; }
-    .section-three .text-slider-second {
-      padding-right: 0px;
-      margin-left: 17px; } }
-  @media (max-width: 767px) {
-    .section-three .iphone_one {
-      height: 100%;
-      margin-top: 0px;
-      margin-left: 25px; } }
-  @media (max-width: 576px) {
-    .section-three .text-slider-second {
-      margin-left: 2px;
-      margin-top: -2px;
-      font-size: 14px; } }
+  .share__slider {
+    margin-top: 184px; }
 
-.section-four {
-  background-color: #313131;
-  background-size: 100% auto;
-  background-repeat: no-repeat; }
-  .section-four-left {
+.photo-iphone {
+  margin-top: -113px;
+  margin-left: -22px; }
+
+.title-slider {
+  font-family: "Montserrat";
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: -22px; }
+
+button {
+  background: none;
+  margin-top: -60px; }
+
+.video-button {
+  margin-top: 6px; }
+
+.slider {
+  min-width: 0; }
+  .slider_item {
+    padding-right: 20px; }
+
+.item__text {
+  font-family: "Varela Round";
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #aeaeae;
+  padding-top: 101px; }
+
+.item__row {
+  padding-top: 69px;
+  margin-top: -44px; }
+
+.item__text-second {
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: -38px;
+  padding-right: 0px;
+  margin-top: -36px;
+  color: #aeaeae; }
+
+.slick-slider {
+  min-width: 0;
+  margin-top: 14px; }
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  margin-top: -95px; }
+
+.slick-list {
+  overflow: hidden; }
+
+.slider .slick-dots {
+  display: flex;
+  align-items: flex-start;
+  margin-left: -7px;
+  margin-top: 34px; }
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 5px; }
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff; }
+
+.slider .slick-dots li.slick-active button {
+  background-color: white; }
+
+@media (max-width: 1200px) {
+  .photo-iphone {
+    width: 90%;
+    height: 90%;
+    margin-top: 61px; }
+  .item__text-second {
+    padding-right: 14px;
+    margin-left: -45px; } }
+
+@media (max-width: 991px) {
+  .photo-iphone {
+    width: 83%;
+    height: 68%;
+    margin-top: 76px; }
+  .share__photo {
+    margin-top: 88px; }
+  .item__text-second {
+    padding-right: 0px;
+    margin-left: 17px; } }
+
+@media (max-width: 767px) {
+  .share__photo {
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 25px; } }
+
+@media (max-width: 576px) {
+  .item__text-second {
+    margin-left: 2px;
+    margin-top: -2px;
+    font-size: 14px; } }
+
+.features {
+  background-color: #313131; }
+  .features__slider {
     margin-left: 71px;
     margin-top: 226px; }
-  .section-four .row {
+  .features__row {
     flex-wrap: nowrap; }
-  .section-four .col-title-two {
-    font-family: 'Montserrat';
+  .features__title {
+    font-family: "Montserrat";
     font-size: 49px;
     line-height: 1.2;
     font-weight: 500;
@@ -7548,185 +7586,334 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: -63px;
     margin-left: -4px;
     padding-bottom: 25px; }
-  .section-four .text-section-four {
-    font-family: 'Varela Round';
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
+  .features__text {
     color: #777777;
     padding-right: 101px; }
-  .section-four .block {
-    height: 232px;
-    background-color: #ffffff;
-    border-radius: 5px; }
-    .section-four .block .title-block {
-      font-family: 'Montserrat';
-      font-size: 18px;
-      line-height: 24px;
-      font-weight: 400;
-      color: #cc5858;
-      margin-top: 34px;
-      margin-left: -100px; }
-      .section-four .block .title-block-1 {
-        color: #FFC316; }
-      .section-four .block .title-block-2 {
-        color: #78F064; }
-      .section-four .block .title-block-3 {
-        color: #2971F0; }
-      .section-four .block .title-block-4 {
-        color: #C464F0; }
-      .section-four .block .title-block-5 {
-        color: #37A4FF; }
-      .section-four .block .title-block-6 {
-        color: #F06473; }
-    .section-four .block .text-block {
-      font-family: 'Varela Round';
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 400;
-      color: #666666;
-      padding-right: 40px;
-      margin-left: -98px;
-      margin-top: 9px; }
-    .section-four .block .brush {
-      margin-top: 44px;
-      margin-left: 31px; }
-    .section-four .block .line {
-      max-width: 470px;
-      height: 43px;
-      background-color: #f06464;
-      margin-top: 27px; }
-      .section-four .block .line-1 {
-        background-color: #FFC316; }
-      .section-four .block .line-2 {
-        background-color: #78F064; }
-      .section-four .block .line-3 {
-        background-color: #2971F0; }
-      .section-four .block .line-4 {
-        background-color: #C464F0; }
-      .section-four .block .line-5 {
-        background-color: #37A4FF; }
-      .section-four .block .line-6 {
-        background-color: #F06473; }
-  .section-four .slick-slider {
-    min-width: 0;
-    max-width: 470px;
-    margin-top: 37px; }
-  .section-four .slick-track {
-    display: flex;
-    align-items: center; }
-  .section-four .slider {
-    min-width: 0; }
-  .section-four .slider_second .slick-dots {
-    display: flex;
-    margin-top: -37px;
-    margin-left: 32px;
-    z-index: 1000;
-    position: relative; }
-  .section-four .slider_second .slick-dots li {
-    list-style: none;
-    margin: 4px; }
-  .section-four .slider_second .slick-dots button {
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid #ffffff; }
-  .section-four .slider_second .slick-dots li.slick-active button {
-    background-color: white;
-    border: 1px solid white; }
-  .section-four .section-four-right {
+  .features__photo {
     margin-top: 76px;
     margin-left: -21px; }
-  @media (max-width: 1000px) {
-    .section-four .row {
-      flex-wrap: wrap; }
-    .section-four .section-four-right {
-      align-items: center; }
-    .section-four .nexus {
-      margin-left: 37px; } }
-  @media (max-width: 565px) {
-    .section-four .block {
-      max-width: 80%; }
-    .section-four .slider_second .slick-dots {
-      margin-top: -12px; }
-    .section-four .brush {
-      width: 75px; }
-    .section-four .section-four-left {
-      margin-left: 7px; }
-    .section-four .nexus {
-      margin-left: 7px; } }
-  @media (max-width: 495px) {
-    .section-four .block .title-block {
-      font-size: 16px;
-      text-align: right;
-      padding-right: 10px; }
-    .section-four .block .text-block {
-      font-size: 14px;
-      text-align: right;
-      padding-right: 10px; }
-    .section-four .slider_second .slick-dots {
-      margin-top: -34px; }
-    .section-four .brush {
-      width: 30px; }
-    .section-four .nexus {
-      width: 90%; } }
-  @media (max-width: 390px) {
-    .section-four .slider_second .slick-dots {
-      margin-top: -34px; }
-    .section-four .block .title-block {
-      margin-top: 10px; } }
-  @media (max-width: 345px) {
-    .section-four .slider_second .slick-dots {
-      margin-top: -12px; }
-    .section-four .brush {
-      padding-top: 40px; } }
 
-.section-five {
-  background-color: white; }
-  .section-five .section-five-title-text {
+.item__block {
+  height: 232px;
+  background-color: #ffffff;
+  border-radius: 5px; }
+
+.block__title {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #cc5858;
+  margin-top: 34px;
+  margin-left: -100px; }
+  .block__title-1 {
+    color: #ffc316; }
+  .block__title-2 {
+    color: #78f064; }
+  .block__title-3 {
+    color: #2971f0; }
+  .block__title-4 {
+    color: #c464f0; }
+  .block__title-5 {
+    color: #37a4ff; }
+  .block__title-6 {
+    color: #f06473; }
+
+.block__text {
+  font-family: "Varela Round";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #666666;
+  padding-right: 40px;
+  margin-left: -98px;
+  margin-top: 9px; }
+
+.block__line {
+  max-width: 470px;
+  height: 43px;
+  background-color: #f06464;
+  margin-top: 27px; }
+  .block__line-1 {
+    background-color: #ffc316; }
+  .block__line-2 {
+    background-color: #78f064; }
+  .block__line-3 {
+    background-color: #2971f0; }
+  .block__line-4 {
+    background-color: #c464f0; }
+  .block__line-5 {
+    background-color: #37a4ff; }
+  .block__line-6 {
+    background-color: #f06473; }
+
+.block__brush {
+  margin-top: 44px;
+  margin-left: 31px; }
+
+.slick-slider {
+  min-width: 0;
+  max-width: 470px;
+  margin-top: 37px; }
+
+.slider_second .slick-track {
+  display: flex;
+  align-items: center;
+  margin-top: 0px; }
+
+.slider {
+  min-width: 0; }
+
+.slider_second .slick-dots {
+  display: flex;
+  margin-top: -37px;
+  margin-left: 32px;
+  z-index: 1000;
+  position: relative; }
+
+.slider_second .slick-dots li {
+  list-style: none;
+  margin: 4px; }
+
+.slider_second .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff; }
+
+.slider_second .slick-dots li.slick-active button {
+  background-color: white;
+  border: 1px solid white; }
+
+@media (max-width: 1000px) {
+  .row {
+    flex-wrap: wrap; }
+  .features__photo {
+    align-items: center; }
+  .photo__nexus {
+    margin-left: 37px; } }
+
+@media (max-width: 565px) {
+  .item__block {
+    max-width: 80%; }
+  .slider_second .slick-dots {
+    margin-top: -23px; }
+  .block__brush {
+    width: 75px; }
+  .features__slider {
+    margin-left: 7px; }
+  .photo__nexus {
+    margin-left: 7px; } }
+
+@media (max-width: 495px) {
+  .block__title {
+    font-size: 16px;
+    text-align: right;
+    padding-right: 10px; }
+  .block__text {
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px; }
+  .block__brush {
+    width: 30px; }
+  .slider_second .slick-dots {
+    margin-top: -34px; }
+  .photo__nexus {
+    width: 90%; } }
+
+@media (max-width: 390px) {
+  .slider_second .slick-dots {
+    margin-top: -34px; }
+  .block__title {
+    margin-top: 10px; } }
+
+@media (max-width: 345px) {
+  .slider_second .slick-dots {
+    margin-top: -26px; }
+  .block__brush {
+    padding-top: 40px; } }
+
+.taken {
+  background-color: #ffffff; }
+  .taken__content {
     max-width: 470px;
     margin-left: 67px;
     margin-top: 68px; }
-    .section-five .section-five-title-text .title-section-five {
-      font-family: 'Montserrat';
-      font-size: 47px;
-      line-height: 1.2;
-      font-weight: 500;
-      color: #f06464; }
-    .section-five .section-five-title-text .text-section-five {
-      font-family: 'Varela Round';
-      font-size: 18px;
-      line-height: 27px;
-      font-weight: 400;
-      color: #666666;
-      margin-top: 21px;
-      margin-left: 4px; }
-    @media (max-width: 1000px) {
-      .section-five .section-five-title-text .section-five-title-text {
-        margin-right: -130px; } }
-  @media (max-width: 499px) {
-    .section-five .section-five-title-text {
-      margin-left: 0px; } }
+  .taken__title {
+    font-family: "Montserrat";
+    font-size: 47px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #f06464; }
+  .taken__text {
+    margin-top: 21px;
+    margin-left: 4px; }
 
-.section-six {
+@media (max-width: 1000px) {
+  .taken__content {
+    margin-right: -130px; } }
+
+@media (max-width: 499px) {
+  .taken__content {
+    margin-left: 0px; } }
+
+.gallery__body {
+  margin: 0 auto;
+  margin-top: 41px;
+  padding-top: 37px; }
+
+.gallery__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.gallery__item-image {
+  background-color: #151515;
+  transition: transform 200ms ease;
+  transform: translateY(0); }
+
+.gallery__item {
+  position: relative; }
+  .gallery__item:hover .gallery__item-image {
+    transform: translateY(-37px); }
+  .gallery__item:hover .item-description {
+    display: flex; }
+
+.item-description {
+  background-color: #151515;
+  height: 87px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin-top: -139px;
+  display: none;
+  justify-content: space-between; }
+
+.description__text {
+  font-family: "Varela Round";
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #c2c2c2;
+  margin-top: 28px;
+  margin-left: 31px; }
+
+.description__icon {
+  display: flex;
+  margin-top: 26px;
+  margin-right: 33px; }
+
+.icon-heart {
+  margin-right: 10px; }
+
+.icon-number {
+  font-family: "Varela Round";
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #f06464; }
+
+@media (max-width: 1999px) {
+  .gallery {
+    background-color: #de5d5d; }
+    .gallery__body {
+      width: 1200px; }
+    .gallery__item {
+      width: 500px;
+      height: auto; }
+      .gallery__item-image {
+        width: 100%; } }
+
+@media (max-width: 1200px) {
+  .gallery__body {
+    width: 800px; }
+  .gallery__item {
+    width: 400px; }
+    .gallery__item-image {
+      width: 100%;
+      height: 419px; } }
+
+@media (max-width: 800px) {
+  .gallery__body {
+    width: 600px; }
+  .gallery__item {
+    width: 300px; }
+    .gallery__item-image {
+      width: 100%;
+      height: 319px; } }
+
+@media (max-width: 800px) {
+  .description__text {
+    margin-left: 9px;
+    margin-top: 19px; } }
+
+@media (max-width: 600px) {
+  .gallery__body {
+    width: 400px; }
+  .gallery__item {
+    width: 400px; }
+    .gallery__item-image {
+      width: 100%;
+      height: 419px; } }
+
+@media (max-width: 500px) {
+  .gallery__body {
+    width: 300px; }
+  .gallery__item {
+    width: 300px; }
+    .gallery__item-image {
+      width: 100%;
+      height: 319px; } }
+
+.download {
   background-color: #de5d5d;
   min-height: 723px; }
-  .section-six .button-appstore {
+  .download__icon {
+    margin-left: 32px;
+    max-width: 402px; }
+  .download__text {
+    margin-top: 169px;
+    padding-left: 50px; }
+    .download__text-title {
+      font-family: "Montserrat";
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: #ffffff; }
+    .download__text-name {
+      font-size: 24px;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-top: 16px; }
+  .download .icon__app {
+    position: relative;
+    z-index: 7;
+    margin-left: 34px;
+    margin-top: 227px; }
+  .download .icon__shadow {
+    margin-top: -244px;
+    margin-left: 45px; }
+  .download .button-appstore {
     display: flex;
     justify-content: space-between;
     margin-top: -4px; }
-  .section-six .btn-theme {
+  .download .btn-theme {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
     margin-right: 15px; }
-  .section-six .btn-theme:hover {
+  .download .btn:focus {
+    outline: none;
+    box-shadow: none; }
+  .download .btn-theme:hover {
     color: #000;
     background-color: rgba(177, 177, 177, 0.514);
     border-color: #fff; }
-  .section-six .appstore {
+  .download .appstore {
     min-width: 257px;
     height: 77px;
     background-color: rgba(6, 53, 80, 0);
@@ -7734,8 +7921,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-radius: 5px;
     margin-top: 46px;
     margin-right: 31px; }
-    .section-six .appstore .text-store {
-      font-family: 'Varela Round';
+    .download .appstore .text-store {
+      font-family: "Varela Round";
       font-size: 30px;
       line-height: 1.2;
       font-weight: 400;
@@ -7745,209 +7932,186 @@ a.text-dark:hover, a.text-dark:focus {
       max-width: 257px;
       margin-top: -45px;
       margin-left: 68px; }
-    .section-six .appstore .icon-store {
+    .download .appstore .icon-store {
       max-width: 52px;
       height: 52px;
       margin-top: 5px;
       margin-left: 10px; }
-  .section-six .content-section-six-icon {
-    margin-left: 32px;
-    max-width: 402px; }
-    .section-six .content-section-six-icon .app-icon {
-      position: relative;
-      z-index: 7;
-      margin-left: 34px;
-      margin-top: 227px; }
-    .section-six .content-section-six-icon .shadow-icon {
-      margin-top: -244px;
-      margin-left: 45px; }
-  .section-six .content-section-six-text {
-    margin-top: 169px;
-    padding-left: 50px; }
-  .section-six .text-title {
-    font-family: 'Montserrat';
-    font-size: 48px;
-    line-height: 1.2;
-    font-weight: 500;
-    color: #ffffff; }
-  .section-six .text-name {
-    font-family: 'Varela Round';
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #ffffff;
-    margin-top: 16px; }
   @media (max-width: 1110px) {
-    .section-six .button-appstore {
+    .download .button-appstore {
       flex-wrap: wrap; } }
   @media (max-width: 1199px) {
-    .section-six .content-section-six-icon {
+    .download .download__icon {
       max-width: 330px; } }
   @media (max-width: 991px) {
-    .section-six .content-section-six-icon {
+    .download .download__icon {
       margin-left: -74px; } }
   @media (max-width: 810px) {
-    .section-six .content-section-six-text {
+    .download .download__text {
       margin-right: 0px; } }
   @media (max-width: 635px) {
-    .section-six .content-section-six-text {
+    .download .download__text {
       padding-left: 0px; } }
   @media (max-width: 575px) {
-    .section-six .content-section-six-icon {
+    .download .download__icon {
       margin-left: auto;
       margin-right: auto;
       margin-top: -110px; }
-    .section-six .content-section-six-text {
+    .download .download__text {
       max-width: 250px;
       margin-top: -40px;
       margin-left: auto;
       margin-right: auto; } }
 
-.section-seven {
+.compatibility {
   background-color: #e7e7e7;
   min-height: 444px; }
-  .section-seven .container-section-seven {
+  .compatibility__body {
     padding-top: 86px;
     padding-left: 68px; }
-    .section-seven .container-section-seven-title {
-      font-family: 'Montserrat';
-      font-size: 24px;
-      line-height: 1.2;
-      font-weight: 400;
-      color: #666666; }
-    .section-seven .container-section-seven-line {
-      max-width: 970px;
-      height: 3px;
-      background-color: #cbcbcb;
-      margin-top: 22px; }
-    .section-seven .container-section-seven-phones {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 32px;
-      padding-right: 59px;
-      flex-wrap: wrap; }
-      .section-seven .container-section-seven-phones .ios {
-        max-width: 445px; }
-        .section-seven .container-section-seven-phones .ios-title {
-          font-family: 'Montserrat';
-          font-size: 18px;
-          line-height: 24px;
-          font-weight: 400;
-          color: #666666; }
-        .section-seven .container-section-seven-phones .ios-text {
-          font-family: 'Varela Round';
-          font-size: 16px;
-          line-height: 24px;
-          font-weight: 400;
-          color: #666666; }
-        .section-seven .container-section-seven-phones .ios-foto {
-          margin-top: 26px;
-          margin-left: 2px; }
-          .section-seven .container-section-seven-phones .ios-foto #foto-ios {
-            width: 36%;
-            display: block;
-            height: auto; }
-      .section-seven .container-section-seven-phones .android {
-        max-width: 445px;
-        margin-right: 45px; }
-        .section-seven .container-section-seven-phones .android-title {
-          font-family: 'Montserrat';
-          font-size: 18px;
-          line-height: 24px;
-          font-weight: 400;
-          color: #666666; }
-        .section-seven .container-section-seven-phones .android-text {
-          font-family: 'Varela Round';
-          font-size: 16px;
-          line-height: 24px;
-          font-weight: 400;
-          color: #666666; }
-        .section-seven .container-section-seven-phones .android-foto {
-          max-width: 378px;
-          margin-top: 33px;
-          margin-left: 2px; }
-          .section-seven .container-section-seven-phones .android-foto #foto-android {
-            width: 100%;
-            display: block;
-            height: auto; }
-      @media (max-width: 1199px) {
-        .section-seven .container-section-seven-phones .android {
-          margin-top: 40px; } }
-      @media (max-width: 767px) {
-        .section-seven .container-section-seven-phones .android-foto {
-          max-width: 450px; } }
-      @media (max-width: 540px) {
-        .section-seven .container-section-seven-phones .android-foto {
-          max-width: 550px; } }
+  .compatibility__title {
+    font-family: "Montserrat";
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #666666; }
+  .compatibility__line {
+    max-width: 970px;
+    height: 3px;
+    background-color: #cbcbcb;
+    margin-top: 22px; }
+  .compatibility__phones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding-right: 59px;
+    flex-wrap: wrap; }
+
+.phones__ios {
+  max-width: 445px; }
+  .phones__ios-title {
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #666666; }
+  .phones__ios-text {
+    font-family: "Varela Round";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #666666; }
+  .phones__ios-photo {
+    margin-top: 26px;
+    margin-left: 2px; }
+    .phones__ios-photo #photo-ios {
+      width: 36%;
+      display: block;
+      height: auto; }
+
+.phones__android {
+  max-width: 445px;
+  margin-right: 45px; }
+  .phones__android-title {
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #666666; }
+  .phones__android-text {
+    font-family: "Varela Round";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #666666; }
+  .phones__android-photo {
+    max-width: 378px;
+    margin-top: 33px;
+    margin-left: 2px; }
+    .phones__android-photo #photo-android {
+      width: 100%;
+      display: block;
+      height: auto; }
+
+@media (max-width: 1199px) {
+  .phones__android {
+    margin-top: 40px; } }
+
+@media (max-width: 767px) {
+  .phones__android-photo {
+    max-width: 450px; } }
+
+@media (max-width: 540px) {
+  .phones__android-photo {
+    max-width: 550px; } }
 
 footer {
   min-height: 225px;
   background-color: #f4f4f4; }
-  footer .footer-content-subsribe-title {
-    font-family: 'Varela Round';
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px; }
+
+.footer__text {
+  font-family: "Montserrat";
+  line-height: 1.2;
+  margin-left: -28px; }
+
+.footer__subscribe {
+  margin-top: -34px;
+  margin-right: 27px; }
+  .footer__subscribe-title {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
-    color: #666666;
     padding-bottom: 13px; }
-  footer .footer-content {
+  .footer__subscribe-input {
     display: flex;
-    justify-content: space-between;
-    padding-top: 94px; }
-    footer .footer-content-text {
-      font-family: 'Montserrat';
-      font-size: 18px;
-      line-height: 1.2;
-      font-weight: 400;
-      color: #666666;
-      margin-left: -28px; }
-    footer .footer-content-subscribe {
-      margin-top: -34px;
-      margin-right: 27px; }
-      footer .footer-content-subscribe-input {
-        display: flex;
-        justify-content: space-between; }
-        footer .footer-content-subscribe-input input {
-          width: 311px;
-          height: 48px;
-          background-color: #f4f4f4;
-          border: 1px solid #a3a3a3;
-          border-radius: 5px; }
-    footer .footer-content .email {
-      font-family: 'Montserrat';
-      font-size: 16px;
-      line-height: 1.2;
-      font-weight: 400;
-      color: #666666;
-      margin-right: 11px;
-      padding-left: 10px;
-      padding-bottom: 3px; }
-    footer .footer-content button {
-      width: 101px;
+    justify-content: space-between; }
+    .footer__subscribe-input input {
+      width: 311px;
       height: 48px;
-      background-color: #f06464;
-      border-radius: 5px;
-      margin-right: -8px;
-      font-family: 'Varela Round';
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 400;
-      color: #f4f4f4; }
-  @media (max-width: 767px) {
-    footer .footer-content-text {
-      margin-right: -310px;
-      margin-top: 70px;
-      margin-left: 77px; } }
-  @media (max-width: 530px) {
-    footer .footer-content-text {
-      margin-right: -310px;
-      margin-top: 70px;
-      margin-left: 77px; } }
-  @media (max-width: 444px) {
-    footer .footer-content-subscribe-input .email {
-      max-width: 190px; }
-    footer .footer-content-subscribe-input button {
-      font-size: 14px; } }
+      background-color: #f4f4f4;
+      border: 1px solid #a3a3a3;
+      border-radius: 5px; }
+
+.input__email {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 1.2;
+  margin-right: 11px;
+  padding-left: 10px;
+  padding-bottom: 3px; }
+
+.input__submit {
+  width: 101px;
+  height: 48px;
+  background-color: #f06464;
+  border-radius: 5px;
+  margin-right: -8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f4f4;
+  margin-top: 0px; }
+
+@media (max-width: 767px) {
+  .footer__text {
+    margin-right: -310px;
+    margin-top: 70px;
+    margin-left: 77px; } }
+
+@media (max-width: 530px) {
+  .footer__text {
+    margin-right: -310px;
+    margin-top: 70px;
+    margin-left: 77px; } }
+
+@media (max-width: 444px) {
+  .input__email {
+    max-width: 190px; }
+  .input__submit {
+    font-size: 14px; } }
 
 /* Обнулення */
 *,
@@ -7966,12 +8130,12 @@ ol,
 li {
   list-style: none; }
 
-img {
-  vertical-align: top; }
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit; }
+
+html {
+  scroll-behavior: smooth; }
 
 html,
 body {
@@ -7980,8 +8144,7 @@ body {
   color: #666666;
   line-height: 27px;
   font-weight: 400;
-  font-family: 'Varela Round';
-  margin-top: 5px; }
+  font-family: "Varela Round"; }
 
 .wrapper {
   min-height: 100%;
@@ -7992,200 +8155,3 @@ body {
   margin: 0px auto;
   padding: 0px 15px;
   box-sizing: content-box; }
-
-main .photo-wrapper {
-  margin-top: 78px;
-  /*.slider_foto{
-            .slick-slider{
-                min-width: 0;
-                overflow: hidden;
-               
-              
-            }
-            .slick-track{
-                display: flex;
-                align-items: center;
-                
-    
-            }
-            .description{
-                position: absolute;
-                width: 100%;
-                height: 87px;
-                background-color: #151515;
-                bottom:-38px;
-                display: none;
-
-               
-    
-                &-content{
-                    display: flex;
-                    justify-content: space-between;
-                    &-text{
-                        font-family: 'Varela Round';
-                        font-size: 18px;
-                        line-height: 27px;
-                        font-weight: 400;
-                        color: #c2c2c2;
-                        padding-top: 27px;
-                        padding-left: 33px;
-
-                    }
-                    &-heart{
-                        display: flex;
-                        justify-content: space-between;
-                        padding-top: 29px;
-                        padding-right: 36px;
-                        &-number{
-                            font-family: 'Varela Round';
-                            font-size: 24px;
-                            line-height: 27px;
-                            font-weight: 400;
-                            color: #f06464;
-                            padding-left: 6px;
-                            margin-top: -3px;
-                        }
-                    }
-                }
-             }
-            .slider{
-                min-width: 0;
-            }
-            &_item{
-                
-                &_two{
-                    margin-left: -36px;
-                }
-                &_three{
-                    max-width: 519px;
-                    max-height: 519px;
-                    img{
-                        width: 100%;
-                    }
-                    
-
-                    .wrapper-image{
-                        position: relative;
-                        margin-left: -19px;
-                        max-height: 519px;
-                        overflow: hidden;
-                    }
-                   
-                }
-             
-            }
-
-          }
-          .wrapper-image_one{
-              .description{
-                  width: 464px;
-                  bottom: 0px;
-              }
-          }
-          .wrapper-image_two{
-            .description{
-                width: 464px;
-                bottom: 0px;
-            }
-        }
-        .wrapper-image_four{
-            .description{
-                width: 26%;
-                bottom: 0px;
-            }
-        }
-          .wrapper-image:hover{
-            margin-top: -75px;
-            overflow: visible;
-             .description{
-                  display: block;
-              }
-          
-        }
-        .wrapper-image_one:hover{
-            margin-top: -75px;
-            overflow: visible;
-             .description{
-                  display: block;
-              }
-          
-        }
-        .wrapper-image_two:hover{
-            margin-top: -75px;
-            overflow: visible;
-             .description{
-                  display: block;
-              }
-          
-        }
-        .wrapper-image_four:hover{
-            margin-top: -75px;
-            overflow: visible;
-             .description{
-                  display: block;
-              }
-          
-        }
-        @media(max-width:1848px){
-            .wrapper-image{
-                .slider_foto_item{
-                    width: 101%;
-                   height: 520px;
-                }
-                .description{
-                    width: 101%;
-                }
-            }
-        }
-        
-*/ }
-  main .photo-wrapper .image-slider_wrapper {
-    height: 519px;
-    align-items: center; }
-    main .photo-wrapper .image-slider_wrapper .image-slider_image {
-      text-align: center;
-      max-width: 100%; }
-      main .photo-wrapper .image-slider_wrapper .image-slider_image_one {
-        margin-left: -39px; }
-      main .photo-wrapper .image-slider_wrapper .image-slider_image_two {
-        margin-left: -56px; }
-      main .photo-wrapper .image-slider_wrapper .image-slider_image_three {
-        margin-left: -20px; }
-    @media (max-width: 1060px) {
-      main .photo-wrapper .image-slider_wrapper .image-slider_image_three {
-        margin-left: 0px; } }
-    @media (max-width: 580px) {
-      main .photo-wrapper .image-slider_wrapper .image-slider_image_two {
-        margin-left: 0px; } }
-    main .photo-wrapper .image-slider_wrapper .description {
-      position: absolute;
-      width: 100%;
-      height: 87px;
-      background-color: #151515;
-      bottom: -38px; }
-      main .photo-wrapper .image-slider_wrapper .description-content {
-        display: flex;
-        justify-content: space-between; }
-        main .photo-wrapper .image-slider_wrapper .description-content-text {
-          font-family: 'Varela Round';
-          font-size: 18px;
-          line-height: 27px;
-          font-weight: 400;
-          color: #c2c2c2;
-          padding-top: 27px;
-          padding-left: 33px; }
-        main .photo-wrapper .image-slider_wrapper .description-content-heart {
-          display: flex;
-          justify-content: space-between;
-          padding-top: 29px;
-          padding-right: 36px; }
-          main .photo-wrapper .image-slider_wrapper .description-content-heart-number {
-            font-family: 'Varela Round';
-            font-size: 24px;
-            line-height: 27px;
-            font-weight: 400;
-            color: #f06464;
-            padding-left: 6px;
-            margin-top: -3px; }
-    main .photo-wrapper .image-slider_wrapper .image-slider_image_one:hover .description {
-      display: block; }

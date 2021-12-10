@@ -72,6 +72,7 @@ $font_second: 'Montserrat';
     
     .fa-bars{
         font-size: 35px;
+        margin-top: 30px;
         color: $white;
     }
 
@@ -118,17 +119,31 @@ $font_second: 'Montserrat';
             
      
             }
+            .button_baner{
+                display: flex;
+                justify-content: center;
+                margin-right: 115px;
+                flex-wrap: wrap;
+            }
+            .button-one{
+                margin-left: 99px;
+                margin-right: 32px;
+            }
+           
             .btn-theme {
                 color: $white;
                 background-color: transparent;
                 border: 2px solid $white;
-                margin-right: 15px;
             }
+            .btn:focus {
+                outline: none;
+                box-shadow: none;
+              }
             
             .btn-theme:hover {
                 color: #000;
                 background-color: rgba(177, 177, 177, 0.514);
-               
+
             }
           
             .appstore{
@@ -186,5 +201,9 @@ $font_second: 'Montserrat';
         }
          
     }
-    
+    @media(max-width:789px){
+        .button-two{
+            margin-left: 67px;
+        }
+    }
 }

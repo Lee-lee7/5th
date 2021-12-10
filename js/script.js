@@ -61,23 +61,3 @@ $(document).ready(function(){
                 });
     
 });
-new Swiper('.image-slider',{
-    autoHeight: true,
-    slidesPerView: 4,
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        820: {
-            slidesPerView: 2,
-        },
-        1210: {
-            slidesPerView: 3,
-        },
-        1620: {
-            slidesPerView: 4,
-        }
-        
-      
-    }
-});
