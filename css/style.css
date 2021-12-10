@@ -7330,6 +7330,101 @@ a.text-dark:hover, a.text-dark:focus {
   src: local(""), url("../fonts/montserrat-v18-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v18-latin-900.woff2") format("woff2"), url("../fonts/montserrat-v18-latin-900.woff") format("woff"), url("../fonts/montserrat-v18-latin-900.ttf") format("truetype"), url("../fonts/montserrat-v18-latin-900.svg#Montserrat") format("svg");
   /* Legacy iOS */ }
 
+.baner-wrapper {
+  background-color: #de5d5d;
+  padding-top: 30px; }
+
+.baner {
+  max-width: 1550px;
+  max-height: 950px;
+  margin: 0px auto;
+  z-index: -100; }
+  .baner .carousel-inner {
+    margin-top: -4px;
+    margin-left: 9px;
+    background-image: url(../img/iphone.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 690px; }
+  .baner .carousel-item {
+    width: 100%; }
+    .baner .carousel-item .text-baner {
+      font-family: "Montserrat";
+      font-size: 88px;
+      line-height: 1.2;
+      font-weight: 600;
+      color: #fff;
+      position: relative;
+      text-align: center;
+      margin-top: 196px;
+      margin-right: 18px; }
+      @media (max-width: 991.98px) {
+        .baner .carousel-item .text-baner {
+          font-size: 70px; } }
+      @media (max-width: 767.98px) {
+        .baner .carousel-item .text-baner {
+          font-size: 60px; } }
+      @media (max-width: 575.98px) {
+        .baner .carousel-item .text-baner {
+          font-size: 40px; } }
+    .baner .carousel-item .button_baner {
+      display: flex;
+      justify-content: center;
+      margin-right: 115px;
+      flex-wrap: wrap; }
+    .baner .carousel-item .button-one {
+      margin-left: 99px;
+      margin-right: 32px; }
+    .baner .carousel-item .btn-theme {
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid #fff; }
+    .baner .carousel-item .btn:focus {
+      outline: none;
+      box-shadow: none; }
+    .baner .carousel-item .btn-theme:hover {
+      color: #000;
+      background-color: rgba(177, 177, 177, 0.514); }
+    .baner .carousel-item .appstore {
+      min-width: 257px;
+      height: 77px;
+      background-color: rgba(6, 53, 80, 0);
+      border: 3px solid #fff;
+      border-radius: 5px;
+      margin-top: 46px; }
+      .baner .carousel-item .appstore .text-store {
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        max-width: 257px;
+        margin-top: -45px;
+        margin-left: 68px; }
+      .baner .carousel-item .appstore .icon-store {
+        max-width: 52px;
+        height: 52px;
+        margin-top: 5px;
+        margin-left: 10px; }
+  .baner .carousel-indicators {
+    margin-bottom: 55px; }
+    @media (max-width: 767.98px) {
+      .baner .carousel-indicators {
+        margin-bottom: 10px; } }
+  .baner .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #fff; }
+  .baner .carousel-indicators .active {
+    background-color: #fff; }
+
+@media (max-width: 789px) {
+  .button-two {
+    margin-left: 67px; } }
+
 .header {
   background-color: #de5d5d;
   position: fixed;
@@ -8125,100 +8220,5 @@ body {
   margin: 0px auto;
   padding: 0px 15px;
   box-sizing: content-box; }
-
-.baner-wrapper {
-  background-color: #de5d5d;
-  padding-top: 30px; }
-
-.baner {
-  max-width: 1550px;
-  max-height: 950px;
-  margin: 0px auto;
-  z-index: -100; }
-  .baner .carousel-inner {
-    margin-top: -4px;
-    margin-left: 9px;
-    background-image: url(../img/iphone.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    min-height: 690px; }
-  .baner .carousel-item {
-    width: 100%; }
-    .baner .carousel-item .text-baner {
-      font-family: "Montserrat";
-      font-size: 88px;
-      line-height: 1.2;
-      font-weight: 600;
-      color: #fff;
-      position: relative;
-      text-align: center;
-      margin-top: 196px;
-      margin-right: 18px; }
-      @media (max-width: 991.98px) {
-        .baner .carousel-item .text-baner {
-          font-size: 70px; } }
-      @media (max-width: 767.98px) {
-        .baner .carousel-item .text-baner {
-          font-size: 60px; } }
-      @media (max-width: 575.98px) {
-        .baner .carousel-item .text-baner {
-          font-size: 40px; } }
-    .baner .carousel-item .button_baner {
-      display: flex;
-      justify-content: center;
-      margin-right: 115px;
-      flex-wrap: wrap; }
-    .baner .carousel-item .button-one {
-      margin-left: 99px;
-      margin-right: 32px; }
-    .baner .carousel-item .btn-theme {
-      color: #fff;
-      background-color: transparent;
-      border: 2px solid #fff; }
-    .baner .carousel-item .btn:focus {
-      outline: none;
-      box-shadow: none; }
-    .baner .carousel-item .btn-theme:hover {
-      color: #000;
-      background-color: rgba(177, 177, 177, 0.514); }
-    .baner .carousel-item .appstore {
-      min-width: 257px;
-      height: 77px;
-      background-color: rgba(6, 53, 80, 0);
-      border: 3px solid #fff;
-      border-radius: 5px;
-      margin-top: 46px; }
-      .baner .carousel-item .appstore .text-store {
-        font-size: 30px;
-        line-height: 1.2;
-        font-weight: 400;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        max-width: 257px;
-        margin-top: -45px;
-        margin-left: 68px; }
-      .baner .carousel-item .appstore .icon-store {
-        max-width: 52px;
-        height: 52px;
-        margin-top: 5px;
-        margin-left: 10px; }
-  .baner .carousel-indicators {
-    margin-bottom: 55px; }
-    @media (max-width: 767.98px) {
-      .baner .carousel-indicators {
-        margin-bottom: 10px; } }
-  .baner .carousel-indicators li {
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #fff; }
-  .baner .carousel-indicators .active {
-    background-color: #fff; }
-
-@media (max-width: 789px) {
-  .button-two {
-    margin-left: 67px; } }
 
 /*# sourceMappingURL=style.css.map */
