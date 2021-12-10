@@ -7331,6 +7331,7 @@ a.text-dark:hover, a.text-dark:focus {
   /* Legacy iOS */ }
 
 .header {
+  background-color: #de5d5d;
   position: fixed;
   z-index: 1020;
   left: 0;
@@ -7339,21 +7340,33 @@ a.text-dark:hover, a.text-dark:focus {
   transition: box-shadow 300ms ease; }
   .header_shadow {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3); }
-
-.header-wrapper {
-  background-color: #de5d5d;
-  align-items: center; }
-  .header-wrapper .navbar {
+  .header .navbar {
     padding: 0px; }
-    .header-wrapper .navbar .nav-item:last-child {
+    .header .navbar .nav-item:last-child {
       padding-right: 0px; }
-    .header-wrapper .navbar .navbar-brand img {
+    .header .navbar .navbar-brand img {
       margin-top: 25px; }
-    .header-wrapper .navbar-nav {
-      margin-top: 32px; }
-      .header-wrapper .navbar-nav .nav-link {
-        position: relative; }
-      .header-wrapper .navbar-nav a::before {
+    .header .navbar-nav .nav-link {
+      line-height: 1.2;
+      color: #fff; }
+    .header .navbar-nav .nav-item {
+      padding-right: 24px; }
+      .header .navbar-nav .nav-item-features {
+        padding-right: 30px; }
+      .header .navbar-nav .nav-item-download {
+        padding-right: 20px; }
+      .header .navbar-nav .nav-item-compatibility {
+        margin-right: -7px; }
+  .header .fa-bars {
+    font-size: 35px;
+    margin-top: 30px;
+    color: #fff; }
+  @media (min-width: 992px) {
+    .header .navbar .nav-link {
+      transition: padding-top 300ms ease;
+      position: relative;
+      padding-top: 40px; }
+      .header .navbar .nav-link::before {
         content: "";
         display: block;
         height: 5px;
@@ -7361,32 +7374,15 @@ a.text-dark:hover, a.text-dark:focus {
         position: absolute;
         top: 0;
         width: 0%;
-        margin-top: -32px;
         margin-left: -7px;
         transition: width ease-in-out 400ms; }
-      .header-wrapper .navbar-nav a:hover::before {
+      .header .navbar .nav-link:hover::before {
         width: 100%; }
-      @media (max-width: 991px) {
-        .header-wrapper .navbar-nav a::before {
-          display: none; } }
-      .header-wrapper .navbar-nav .nav-item {
-        padding-right: 24px; }
-        .header-wrapper .navbar-nav .nav-item-features {
-          padding-right: 30px; }
-        .header-wrapper .navbar-nav .nav-item-download {
-          padding-right: 20px; }
-        .header-wrapper .navbar-nav .nav-item-compatibility {
-          margin-right: -7px; }
-      .header-wrapper .navbar-nav li a {
-        font-size: 18px;
-        line-height: 1.2;
-        font-weight: 400;
-        color: #fff; }
-
-.header .fa-bars {
-  font-size: 35px;
-  margin-top: 30px;
-  color: #fff; }
+    .header.header_shadow .navbar-brand img {
+      margin-top: 0; }
+    .header.header_shadow .navbar .nav-link {
+      padding-top: 15px;
+      padding-bottom: 15px; } }
 
 .overview {
   padding-top: 109px;

@@ -1,6 +1,7 @@
 $(function () {
     let header = $('.header');
-    $('body').css('padding-top', header.height())
+    let banner = $('.baner');
+    banner.css('padding-top', header.height() + banner.css('padding-top'))
 
     $(window).on('scroll', function (e) {
         if (window.pageYOffset > 0) {
