@@ -41,4 +41,15 @@ gulp.task('watch', function () {
   gulp.watch('./scss/**/*.scss', gulp.series('sass'))
 })
 
+const autoprefixer = require('gulp-autoprefixer');
+
+gulp.task('prefix', () =>
+    gulp.src('styleTest.css')
+        .pipe(autoprefixer({
+            browsers: ['last 99 versions'],
+            cascade: false
+    }))
+    .pipe(gulp.dest('style'))
+)
+
 gulp.task('default', gulp.series(gulp.parallel('js', 'sass'), 'watch'))
