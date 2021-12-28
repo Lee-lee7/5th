@@ -170,7 +170,7 @@
     }
 }
 @media (max-width: 495px) {
-    .block{
+    .block {
         &__title {
             font-size: 16px;
             text-align: right;
@@ -184,7 +184,6 @@
         &__brush {
             width: 30px;
         }
-
     }
     .slider_second .slick-dots {
         margin-top: -34px;
@@ -207,5 +206,20 @@
     }
     .block__brush {
         padding-top: 40px;
+    }
+}
+@media (max-width: 1080px) {
+    .photo__nexus {
+        margin-left: -25px;
+    }
+}
+@media (max-width: 1000px) {
+    .photo__nexus {
+        margin-left: 80px;
+    }
+}
+@media (max-width: 565px) {
+    .photo__nexus {
+        margin-left: 13px;
     }
 }

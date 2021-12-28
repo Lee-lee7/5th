@@ -10,7 +10,9 @@
     &_shadow {
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
     }
-
+    .fa-bars{
+        margin-left: -45px;
+    }
     .navbar {
         padding: 0px;
         .nav-item:last-child {
@@ -84,6 +86,11 @@
                     padding-bottom: 15px;
                 }
             }
+        }
+    }
+    @media (max-width:1070px){
+        .navbar-nav{
+            padding-right: 33px;
         }
     }
 }
