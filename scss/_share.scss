@@ -136,3 +136,14 @@ button {
         font-size: 14px;
     }
 }
+@media (max-width: 991px){
+    .video-button{
+        margin-left: -43px;
+        width: 70%;
+        height: auto;
+    }
+    .item__text-second{
+        margin-top: -14px;
+        margin-left: -68px;
+    }
+}

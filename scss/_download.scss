@@ -125,4 +125,14 @@
             margin-right: auto;
         }
     }
+    @media (max-width: 630px) {
+        .download__icon {
+            margin-left: -44px;
+        }
+    }
+    @media (max-width: 991px) {
+        .appstore{
+           margin-bottom: 25px
+        }
+    }
 }
