@@ -39,6 +39,7 @@ button {
         padding-right: 20px;
     }
 }
+
 .item {
     &__text {
         font-size: 18px;
@@ -97,6 +98,30 @@ button {
     background-color: white;
 }
 
+.slick-active {
+    .item {
+        &__text {
+            margin-top: 0px;
+            padding-top: 101px;
+            &-second {
+                padding-top: 55px;
+            }
+        }
+    }
+    .video-button {
+        margin-top: 85px;
+    }
+}
+
+.item {
+    &__row {
+        &_one {
+          
+            padding-top: 17px;
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .photo-iphone {
         width: 90%;
@@ -136,13 +161,13 @@ button {
         font-size: 14px;
     }
 }
-@media (max-width: 991px){
-    .video-button{
+@media (max-width: 991px) {
+    .video-button {
         margin-left: -43px;
         width: 70%;
         height: auto;
     }
-    .item__text-second{
+    .item__text-second {
         margin-top: -14px;
         margin-left: -68px;
     }
