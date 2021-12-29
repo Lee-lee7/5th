@@ -223,3 +223,26 @@
         margin-left: 13px;
     }
 }
+
+/*IPad*/
+
+@media (max-width: 810px) {
+    .features {
+        &__slider {
+            margin-top: 120px;
+        }
+        &__photo {
+            margin: 0 auto;
+        }
+        &__title{
+            margin-left: 80px;
+        }
+        &__text{
+            margin-bottom: 30px;
+        }
+    }
+
+    .slider_second {
+        margin: 0px 22px;
+    }
+}
