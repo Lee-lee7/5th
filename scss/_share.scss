@@ -98,7 +98,7 @@ button {
     background-color: white;
 }
 
-.slick-active {
+.slick-slider {
     .item {
         &__text {
             margin-top: 0px;
@@ -110,13 +110,14 @@ button {
     }
     .video-button {
         margin-top: 85px;
+        margin-left: 2px;
+
     }
 }
 
 .item {
     &__row {
         &_one {
-          
             padding-top: 17px;
         }
     }
@@ -170,5 +171,38 @@ button {
     .item__text-second {
         margin-top: -14px;
         margin-left: -68px;
+    }
+}
+
+
+
+/*IPad*/
+
+@media(max-width:810px){
+    .share{
+        &__photo{
+            margin-top: -60px;
+            .photo-iphone{
+                width: 90%;
+                height: 85%;
+                margin-top: 80px;
+            }
+        }
+        &__slider{
+            margin-top: 60px;
+            .title-slider{
+                font-size: 40px;
+            }
+            .item__text{
+                font-size: 16px;
+                &-second{
+                    margin-left: -62px;
+                    padding-top: 20px
+                }
+            }
+            .video-button{
+                margin-left: -35px;
+            }
+        }
     }
 }
