@@ -1,6 +1,7 @@
 .download {
     background-color: #de5d5d;
     min-height: 723px;
+    margin-top: -1px;
     &__icon {
         margin-left: 32px;
         max-width: 402px;
@@ -101,6 +102,9 @@
         .download__icon {
             margin-left: -74px;
         }
+        .playstore{
+            margin-top: 2px;
+        }
     }
     @media (max-width: 810px) {
         .download__text {
@@ -135,4 +139,38 @@
            margin-bottom: 25px
         }
     }
+
+/*IPad*/
+@media (max-width: 795px){
+    .icon{
+        &__app{
+            margin-left: 62px;
+        }
+        &__shadow{
+            margin-left: 70px;
+        }
+       
+    }
+    .playstore{
+        margin-top: 2px;
+    }
 }
+@media (max-width: 767px){
+    .icon{
+        &__app{
+            margin-left: 32px;
+        }
+        &__shadow{
+            margin-left: 40px;
+        }
+       
+    }
+    .playstore{
+        margin-top: 2px;
+    }
+    .download__text-title{
+        font-size: 38px;
+    }
+}
+}
+
