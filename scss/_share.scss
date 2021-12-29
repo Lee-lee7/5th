@@ -178,14 +178,14 @@ button {
 
 /*IPad*/
 
-@media(max-width:810px){
+@media(max-width:834px){
     .share{
         &__photo{
             margin-top: -60px;
             .photo-iphone{
                 width: 90%;
                 height: 85%;
-                margin-top: 80px;
+                margin-top: 86px;
             }
         }
         &__slider{
@@ -203,6 +203,19 @@ button {
             .video-button{
                 margin-left: -35px;
             }
+        }
+    }
+}
+
+/*IPad Pro*/
+
+@media (max-width: 1024px){
+    .share{
+        &__photo{
+            margin-top: -26px;
+        }
+        &__slider{
+            margin-top: 129px;
         }
     }
 }
