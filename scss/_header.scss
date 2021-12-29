@@ -94,4 +94,12 @@
             padding-right: 33px;
         }
     }
+    @media (max-width: 991px){
+        .navbar-toggler-icon{
+            margin-top: 16px;
+        }
+        .fa-bars{
+            margin-right:  -60px;
+        }
+    }
 }

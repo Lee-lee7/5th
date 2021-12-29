@@ -45,6 +45,12 @@
             margin-right: 115px;
             flex-wrap: wrap;
         }
+        @media (max-width: 789px){
+           .button_baner{
+                margin-right: 83px;
+            }
+          }
+
         .button-one {
             margin-left: 99px;
             margin-right: 32px;
@@ -110,9 +116,15 @@
     .carousel-indicators .active {
         background-color: $white;
     }
+  
 }
 @media (max-width: 789px) {
     .button-two {
         margin-left: 67px;
     }
+}
+@media (max-width: 789px){
+  .button_baner{
+      margin-right: 83px;
+  }
 }
