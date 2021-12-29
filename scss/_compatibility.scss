@@ -98,3 +98,10 @@
         max-width: 550px;
     }
 }
+@media (max-width: 810px){
+    .compatibility{
+        &__body{
+            padding-left: 0px;
+        }
+    }
+}
