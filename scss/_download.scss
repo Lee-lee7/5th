@@ -50,7 +50,7 @@
     .btn:focus {
         outline: none;
         box-shadow: none;
-      }
+    }
     .btn-theme:hover {
         color: #000;
         background-color: rgba(177, 177, 177, 0.514);
@@ -102,7 +102,7 @@
         .download__icon {
             margin-left: -74px;
         }
-        .playstore{
+        .playstore {
             margin-top: 2px;
         }
     }
@@ -111,9 +111,28 @@
             margin-right: 0px;
         }
     }
-    @media (max-width: 635px) {
+    @media (max-width: 620px) {
+        .icon {
+            &__app {
+                margin-left: 60px;
+                img {
+                    width: 75%;
+                    height: auto;
+                    margin-left: 40px;
+                }
+            }
+            &__shadow {
+                margin-left: 60px;
+                img {
+                    margin-top: 45px;
+                    width: 103%;
+                    height: auto;
+                    margin-left: 40px;
+                }
+            }
+        }
         .download__text {
-            padding-left: 0px;
+            padding-left: 20px;
         }
     }
     @media (max-width: 575px) {
@@ -123,54 +142,66 @@
             margin-top: -110px;
         }
         .download__text {
-            max-width: 250px;
+            text-align: center;
             margin-top: -40px;
             margin-left: auto;
             margin-right: auto;
         }
-    }
-    @media (max-width: 630px) {
-        .download__icon {
-            margin-left: -44px;
+        .icon {
+            &__app {
+                img {
+                    margin-left: 20px;
+                }
+            }
+            &__shadow {
+                img {
+                    margin-left: 20px;
+                }
+            }
         }
-    }
-    @media (max-width: 991px) {
         .appstore{
-           margin-bottom: 25px
+            margin: 30px auto;
+            margin-bottom: -10px !important;
+        }
+        .playstore{
+            margin: 30px  auto !important;
         }
     }
 
-/*IPad*/
-@media (max-width: 795px){
-    .icon{
-        &__app{
-            margin-left: 62px;
+    @media (max-width: 991px) {
+        .appstore {
+            margin-bottom: 25px;
         }
-        &__shadow{
-            margin-left: 70px;
-        }
-       
     }
-    .playstore{
-        margin-top: 2px;
-    }
-}
-@media (max-width: 767px){
-    .icon{
-        &__app{
-            margin-left: 32px;
-        }
-        &__shadow{
-            margin-left: 40px;
-        }
-       
-    }
-    .playstore{
-        margin-top: 2px;
-    }
-    .download__text-title{
-        font-size: 38px;
-    }
-}
-}
 
+    /*IPad*/
+    @media (max-width: 795px) {
+        .icon {
+            &__app {
+                margin-left: 62px;
+            }
+            &__shadow {
+                margin-left: 70px;
+            }
+        }
+        .playstore {
+            margin-top: 2px;
+        }
+    }
+    @media (max-width: 767px) {
+        .icon {
+            &__app {
+                margin-left: 32px;
+            }
+            &__shadow {
+                margin-left: 40px;
+            }
+        }
+        .playstore {
+            margin-top: 2px;
+        }
+        .download__text-title {
+            font-size: 38px;
+        }
+    }
+}
